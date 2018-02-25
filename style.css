@@ -1,0 +1,502 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: CenturyGothic;
+    src: url('Fonts/CenturyGothic.ttf');
+    
+}
+
+@font-face
+{
+    font-family: "PTSans";
+    src: url('Fonts/PTSans.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: PTSans;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/*HEADER*/
+/*Navigation*/
+.navigation {
+  top: 0px;
+  left: 0px;
+  background: #FDFEFE;
+  position: fixed;
+  padding-left: 60px;
+  width: 100%;
+  z-index: 4;
+}
+
+
+.navbar {
+  width: 100%;
+}
+
+.navbar ul a {
+  display:block;
+  text-decoration:none;
+  font-weight:700;
+  font-size:17px;
+  line-height:20px;
+  padding:0 15px;
+  font-family: CenturyGothic;
+  color: #95A5A6;
+}
+
+.navbar ul li:hover a {
+    color: #30B18A;
+    text-shadow: 2px 2px 3px #D0D3D4;
+}
+
+.navbar ul li{
+  float:left;
+  margin-left: 10px;
+  list-style: none;
+}
+
+.navbar ul
+{
+    padding: 0;
+    margin-left: 100px;
+}
+
+.menu1 img{
+    position: relative;
+    width: 110%;
+    height: auto;
+    line-height: 0px;
+}
+
+.menu1 {
+    margin-top: -7px;
+	width: 180px;
+	height: 40px;
+	margin-right: 100px;
+    line-height:0px;
+}
+
+/*END*/
+
+/*Video Header*/
+.vid-header {
+    height:100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.full-vid-wrap
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.full-vid-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #CACFD2;
+    z-index:1;
+    opacity: 0.40;
+}
+
+.header-content {
+    z-index:2;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.btn {
+    background: #34B3A0;
+    color: #FFF;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+@media(max-width: 960px){
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;n
+    }
+}
+/*End Video Header*/
+/*HEADER END*/
+
+/*BODY*/
+
+/*LOGO*/
+.logo-pos 
+{
+    position: relative;
+    margin: auto;
+    align-items: center;
+    width: 20%;
+    height: auto;
+}
+
+.logo-pos img {
+    top: 10%;
+    width: 100%;
+}
+/*LOGO END*/
+
+/*World Wide Web*/
+.W3 
+{
+    margin-right: 0;
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 3px 4px 10px #AAB7BB;
+}
+.W3 table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+    margin-right: 0;
+}
+
+.W3-table
+{
+    position: absolute;
+    table-layout: fixed;
+    width: 100%;
+    top: -10px;
+    right: -25px;
+}
+
+.tab-body {
+    display: table-row;
+    vertical-align: top;
+}
+
+.tab-tr { 
+    display: inline-table;
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.td-image {
+    text-align: center;
+    width: 50%;
+}
+
+.td-image p {
+    margin: 10%;
+    font-family: "Yu Gothic Light";
+}
+
+.td-meaning {
+    right: 0;
+    width: 50%;
+}
+
+.WebUse-img 
+{
+    position: relative;
+    width: 125%;
+    height: auto;
+    top: 0;
+    margin-right: -20px;
+    margin: 0;
+    display: flex;
+}
+
+.td-meaning img
+{
+    margin: 0;
+}
+.logo-pos h1 
+{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    font-family: CenturyGothic;
+    font-size: 30px;
+    width: 100%;
+}
+
+.container {
+    
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+/*Tim Berners-Lee*/
+.container-one
+{
+    margin-left: 0;
+    background: #FBFCFC;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}
+
+.Tim-Berners ul
+{
+    position: relative;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    margin-top: 30%;
+    padding: 0;
+    width: 600px;
+    height: 150px;
+}
+
+.Tim-Berners ul li
+{
+    list-style: none;
+    position: absolute;
+    background: #000;
+    transform: rotate(45deg);
+    margin: -100px;
+    overflow: hidden;
+}
+
+.Tim-Berners ul li .bg 
+{
+    width: 100%;
+    height: 100%;
+}
+
+.Tim-Berners ul li.item1 
+{
+    top: -205px;
+    left: -50px;
+    width: 350px;
+    height: 350px;
+}
+
+.Tim-Berners ul li.item2 
+{
+    bottom:0;
+    left:25%;
+    width: 200px;
+    height: 200px;
+}
+
+.Tim-Berners ul li.item3
+{
+    top:0;
+    left:50%;
+    width: 200px;
+    height: 200px;
+}
+
+.Tim-Berners ul li.item1 .bg
+{
+    background: url(Images/Tim1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-45deg) scale(1.8);
+    top: 50px;
+    left: 50px;
+    position: relative;
+}
+
+.Tim-Berners ul li.item2 .bg
+{
+    background: url(Images/Tim2A.jpg);
+    background-size: cover;
+    transform: rotate(-45deg) scale(1.4);
+}
+
+.Tim-Berners ul li.item3 .bg
+{
+    background: url(Images/Tim3A.jpg);
+    background-size: cover;
+    transform: rotate(-45deg) scale(1.4);
+    background-position: right;
+}
+/*TIME BERNERS-LEE END*/
+
+/*Lesson Cards*/
+.tab-cards {
+    position: relative;
+    margin-left: 3%;
+}
+.card {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    overflow: hidden;
+    top: 0;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container-card {
+    padding: 2px 16px;
+}
+.td-card
+{
+    width: 30%;
+    height: 40%;
+}
+
+.card-one img 
+{
+    position: relative;
+    width: 300px;
+}
+
+.title-card
+{
+    font-size: 20px;
+}
+/*Footer*/
+.footer-wrap 
+{
+    height: 200px;
+    width: 100%;
+    background: #EAEDED;
+    text-align: center;
+}
+/*Footer End*/
+
+
+/*Glossary of Terms*/
+.Glossary-wrap
+{
+margin-top: 3%;
+position: relative;
+margin-left: 15%;
+margin-right: 15%;
+text-align: justify;
+}
+
+.Gloss-tab{
+    position: relative;
+    width: 140%;
+    height: auto;
+    margin-left: -20%;
+}
+
+.gloss-tabA 
+{
+    width: 15%;
+}
+.shortcut-alpha
+{
+    position: fixed;
+    width: 10%;
+    margin-left: 2%;
+    height: 70%;
+    background-color: #ECF0F1;
+    top: 15%;
+    border-radius: 5%;
+    box-shadow: 0 8px 10px -6px #B3B6B7;
+     -webkit-box-shadow: 0 8px 10px -6px #B3B6B7;
+    -moz-box-shadow: 0 8px 10px -6px #B3B6B7;
+    text-shadow: 2px 2px 3px #D0D3D4;
+
+}
+
+.shortcut-alpha ul li a
+{
+    color: black;
+    text-decoration: none;
+   
+}
+
+.shortcut-alpha ul li
+{
+     list-style: none;
+     font-family: CenturyGothic;
+     font-size: 20px;
+     position: relative;
+    text-align: center;
+}
+
+.gloss-cover {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.gloss-def-wrap
+{
+    position: relative;
+    background: #F7F9F9;
+    box-shadow: 2px 2px 10px #BDC3C7;
+    font-family: "PTSans";
+    margin-right: 2%;
+    
+}
+.pic-cover {
+    position: relative;
+    width: 100%;
+    top: -190px;
+    left: 0;
+}
+.gloss-tabB
+{
+    width: 80%;
+}
+
+
+.define-wrap
+{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.shortcut-alpha ul li:hover a {
+    color: #30B18A;
+    text-shadow: 2px 2px 3px #D0D3D4;
+}
+/*Glossary End*/
+
+
+
+
+
+
+
+
