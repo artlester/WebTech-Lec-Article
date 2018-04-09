@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Web Technology</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Images/LogoGrayTrans.png" />
+    </head>
+    <body>
+    <header class="hd-browser-wrapper">
+        <div class="navigation" id="id3"><!-- -->
+                <nav class="navbar" id="id00001"><!-- -->
+                   <ul>
+                        <li class="menu1">
+                            <a href="Index.html"><img class="WBLettering" src="Images/WebTech.png"></a></li>
+                        <li class="menu2">
+                            <a href="Glossary.html">Glossary of Terms</a></li>
+                        <li class="menu3">
+                            <a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="browser-wrap">
+            <h1>The at-rule</h1>
+	A CSS command that starts with the “@” sign. It follows an identifier
+<ul>Following at-rules:
+<li>@charset
+-specifies the character encoding used in the style sheet. It must be the first element in the style sheet and not be preceded by any character</li>
+
+<li>@import
+    - used to import style rules from other style sheets</li>
+
+<li>@namespace
+    -is an at-rule that defines XML namespaces to be used in a CSS style sheet</li>
+
+<li>@media
+-used to apply styles based on the result of one or more media queries, which test a device's type, specific characteristics, and environment</li>
+
+<li>@supports
+-lets you specify declarations that depend on a browser's support for one or more specific CSS features</li>
+
+<li>@document
+    - restricts the style rules contained within it based on the URL of the document</li>
+
+<li>@page
+    - used to modify some CSS properties when printing a document</li>
+
+<li>@font-face
+-allows authors to specify fonts (online url(), and locally local()), to display text on their web pages</li>
+
+<li>@keyframes
+-specifies the animation code. The animation is created by gradually changing from one set of CSS styles to another</li>
+
+<li>@viewport
+    -the portion of a device's screen that is available for application use</li>
+
+
+<li>@counter-style
+    -lets you define counter styles that are not part of the predefined set of styles</li></ul>
+
+
+            <h2>CSS Rule of Precedence</h2>
+            An HTML element can be the subject of the selectors of multiple style rules, and when multiple CSS rules target the same element applying the same CSS properties there will be conflicts. This problem can be solved by understanding the CSS rule of precedence.
+
+            <h3>Origin and Importance</h3>
+            <p>The origin and importance is one of the steps of CSS cascade. This both determines which style declaration has the highest priority.
+
+Origin refers to where it comes from. Style sheets may have three potential origins namely, author, user, and user-agent.</p>
+            <ul><li>Author - This refers to the person creating the website.</li>
+            <li>User - This refers to the person that is using the website.</li>
+        <li>User-Agent - This is typically the browser.</li></ul>
+
+            <p>Importance can be determine by using the <b>!important</b> rule. The !important rule has the highest precedence of all precedence factors, it overrides the previous assigned CSS declarations but the override rule can be override by itself. Both user and author style sheets can have The !important must be placed after the CSS property before the semicolon as shown in the example below.
+     Example:
+&lt;style&gt;
+a {
+  Color: yellow !important;
+} 
+&lt;/style&gt;
+
+           The sample code above will render all the links on the website with yellow color regardless of the other CSS declarations that can affect the link element.</p>
+
+            <h3>Specificity</h3>
+<p>Specificity is the means by which a browser decides which CSS property declarations are the most relevant to an element and, therefore, will be applied.
+
+          The different CSS selector types has different specificity. By specificity is meant how specifically the CSS selector targets the element is selects. Here is a list of CSS selector specificity:</p>
+            <img src="Images/specificity.PNG" class="SpecsImg">
+</div>
+</body>
+</html>

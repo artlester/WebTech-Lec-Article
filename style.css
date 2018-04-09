@@ -1,6 +1,3 @@
-*{
-    box-sizing: border-box;
-}
 
 @font-face
 {
@@ -14,6 +11,12 @@
     font-family: "PTSans";
     src: url('Fonts/PTSans.ttf');
 }
+
+h1
+{
+    text-align: center;
+}
+
 
 body {
     margin: 0;
@@ -98,16 +101,16 @@ body {
 .full-vid-wrap
 {
     position: absolute;
-    top: 0;
+    top: -24%;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
 }
 
 .full-vid-wrap video {
-    min-width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .header-overlay {
@@ -178,7 +181,7 @@ body {
     position: relative;
     background: white;
     width: 100%;
-    height: 450px;
+    height: 600px;
     overflow: hidden;
     box-shadow: 3px 4px 10px #AAB7BB;
 }
@@ -195,10 +198,14 @@ body {
     position: absolute;
     table-layout: fixed;
     width: 100%;
-    top: -10px;
+    top: 30%;
     right: -25px;
 }
 
+.W3 h1 {
+    text-align: center;
+    font-family: CenturyGothic;
+}
 .tab-body {
     display: table-row;
     vertical-align: top;
@@ -271,6 +278,17 @@ td, th {
     position: absolute;
 }
 
+.TimBerners
+{
+    position: relative;
+    width: 80%;
+}
+
+.Tim-Berners
+{
+    position: relative;
+    top: 5%;
+}
 .Tim-Berners ul
 {
     position: relative;
@@ -348,21 +366,36 @@ td, th {
     transform: rotate(-45deg) scale(1.4);
     background-position: right;
 }
+
+.WWW-wrap {
+    position: relative;
+    margin-left: 40%;
+    top: -80%;
+}
 /*TIME BERNERS-LEE END*/
 
 /*Lesson Cards*/
 .tab-cards {
     position: relative;
-    margin-left: 3%;
+    margin: 10px;
+    padding: 10px;
 }
 .card {
     position: relative;
-    width: 90%;
-    height: 70%;
+     max-height: 70%;
+    max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 2%;
     transition: 0.3s;
     overflow: hidden;
     top: 0;
+    color: black;
+   
+}
+
+.td-card a
+{
+    text-decoration: none;
 }
 
 .card:hover {
@@ -375,7 +408,7 @@ td, th {
 .td-card
 {
     width: 30%;
-    height: 40%;
+    height: auto;
 }
 
 .card-one img 
@@ -388,13 +421,18 @@ td, th {
 {
     font-size: 20px;
 }
+
 /*Footer*/
 .footer-wrap 
 {
-    height: 200px;
+    height: 50%;
     width: 100%;
     background: #EAEDED;
     text-align: center;
+    z-index: 100; 
+}
+.footer-wrap p{
+    padding: 5px;
 }
 /*Footer End*/
 
@@ -428,7 +466,7 @@ text-align: justify;
     height: 70%;
     background-color: #ECF0F1;
     top: 15%;
-    border-radius: 5%;
+    border-radius: 15px;
     box-shadow: 0 8px 10px -6px #B3B6B7;
      -webkit-box-shadow: 0 8px 10px -6px #B3B6B7;
     -moz-box-shadow: 0 8px 10px -6px #B3B6B7;
@@ -493,9 +531,121 @@ text-align: justify;
 }
 /*Glossary End*/
 
+/*Browser*/
+.browser-wrap, .CSS-wrap
+{
+    position: relative;
+    box-shadow: 3px 3px 5px #BFC9CA;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    margin-top: 2%;
+    background: #F7F9F9;
+    padding: 5%;
+}
 
+.browser-wrap
+{
+    text-align: justify;
+    font-family: PTSans;
+}
 
+.browser-wrap h1 {
+    font-family: CenturyGothic;
+    text-align: center;
+    color: #587A6F;
+    text-shadow: 2px 2px 3px #B3B6B7;
+}
+.browser-wrap p{
+    margin: 7%;
+}
+.browser-img {
+    position: relative;
+    margin-left: 0;
+}
+.art-wrap{
+    position: relative;
+    margin-left: 40%;
+    margin-top: -45%;
+}
+.CSSImg{
+    
+}
+/*BROWSER END*/
 
+/*HTTP*/
+.http-wrap
+{
+    position: relative;
+    box-shadow: 3px 3px 5px #BFC9CA;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    margin-top: 2%;
+    background: #F7F9F9;
+}
+
+.http-wrap p
+{
+    text-align: justify;
+    font-family: PTSans;
+    margin: 5%;
+}
+
+.http-wrap ul li
+{
+    list-style: circle;
+    margin: 7%;
+}
+
+.http-wrap h1
+{
+    text-align: center;
+    font-family: CenturyGothic;
+    color: #515A5A;
+    text-shadow: 2px 3px 4px #B3B6B7;
+    font-size: 50px;
+}
+
+/*HTTP END*/
+
+/*ABOUT US*/
+.Ab-wrap
+{
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: #F7F9F9;
+    
+}
+
+.Ab-wrap ul li
+{
+    list-style: none;
+    font-size: 1.25vw;
+}
+
+.Ab-wrap ul h2
+{
+    font-size: 2vw;
+}
+
+/*CSS HTML*/
+.CSS-wrap
+{
+    padding: 5%;
+}
+
+.CSSHead
+{
+    text-align: center;
+}
+
+.SpecsImg
+{
+    width: 80%;
+    height: auto;
+}
 
 
 

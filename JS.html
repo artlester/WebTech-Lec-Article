@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Web Technology</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Images/LogoGrayTrans.png" />
+    </head>
+    <body>
+    <header class="hd-browser-wrapper">
+        <div class="navigation" id="id3"><!-- -->
+                <nav class="navbar" id="id00001"><!-- -->
+                   <ul>
+                        <li class="menu1">
+                            <a href="Index.html"><img class="WBLettering" src="Images/WebTech.png"></a></li>
+                        <li class="menu2">
+                            <a href="Glossary.html">Glossary of Terms</a></li>
+                        <li class="menu3">
+                            <a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="browser-wrap">
+            <h1>JAVASCRIPT</h1>
+- is an interpreted programming language for web developers and is characterized to be dynamic and is multi-paradigm. It is used alongside HTML  and CSS to make web pages dynamic and interactive. JavaScript has API which enables it to work with text, arrays, dates, regular expressions and some manipulation of DOM. A scripting language, ECMAScript, standardizes JavaScript for many different implementations. 
+
+<h2>HISTORY</h2>
+JavaScript was developed by Brendan Eich in 1995 while he was working at Netscape Communications. It was at first named as Mocha but was changed to LiveScript when its beta version was first released.  On September 1995, it was renamed to Javascript when deployed in December.
+
+<h2>JavaScript API</h2>
+
+<ul><li>ECMAScript - is a scripting language specification by ECMA International  created for standardizing JavaScript. Its common use is for client-side scripting.</li>
+
+<li>Browser Object Model(BOM) API- a browser convention that deals not just with the documents(which includes the history, navigator, location, window. etc) of the browser but also with the components of the browser. Implementation for BOM has no standards and does not have a strict definition which makes it easy to implement in any way you want.</li>
+
+<li>DOM API
+-is a language that is independent from conventions and works in multiple platforms used to represent and interact with the objects from HTML, XHTML, and XML documents. The Objects under the Document Object Model tree can be manipulated and addressed through the use of methods. </li></ul>
+
+            <h3>Some of the DOM API Interfaces includes:</h3>
+<li>Node
+- an interface which object types inherit from; It may also be used to inherit methods with the same set.</li>
+
+<li>Document
+ - an interface which represents the web page loaded by the browser and also an entry point into the web page’s content, that is the Document Object Model tree. </li>
+
+<li>EventTarget
+- an interface implemented by objects which can receive and listen to events. Its methods includes:
+    <ul><li>EventTarget.addEventListener()- for registering an event handler for a specific type.</li>
+    <li>EventTarget.removeEventListener() - a method  to remove a listener of an event.</li></ul></li>
+            <li>EventTarget.dispatchEvent() - to send off an event </li>
+
+<li>Events - represents an event which takes place in the DOM. Event constructor creates an object and will return it.</li>
+
+            <h2>Variables in JavaScript</h2>
+            <li>Variables in javascript can store any value type just like in java.</li>
+        <li>To declare a variable in javascript, use the keyword var followed by he name of the variable.</li>
+	<li>After declaring a variable, you can reference it elsewhere by using the name :
+		var a = 9352;
+		 a + 100;
+
+        Output = 9452</li>
+
+	<li>Variables can be used to declare other variables.
+		var a = 9352;
+		var b = a + 100;
+		b;
+
+            Output = 9452</li>
+
+<li>Variables with existing value can be given another different value after it is declared.
+	var subject = “ProgApps”;
+	Subject = “WebTech”;
+
+            Output = “WebTech”</li>
+
+<li>Naming variables in javascript are flexible. You may start it with a letter, _underscore, or a $dollar sign followed by numbers, underscore and dollar sign.</li>
+	<img src="Images/Constant.png" style="width:50%">
+
+            <h2>Constant</h2>
+
+        <h3>Functionalities in JavaScript</h3>
+<ul><li>A function in JavaScript is used by defining it to where it is called. It can be reused and named. Function has the following syntax:
+            
+ 	function nameOfFunction(parameters){
+		/*code here*/
+    }	</li>
+
+<li>Function expression - is used to define a function inside an expression and can be used as soon as it was defined.
+	Syntax:
+		Var nameOfFunction = function [name]([param1[, param2..., paramN]]]) {
+   statements
+              };</li>
+  
+            </ul>
+
+            <h2>Arrays in Javascript</h2>
+Are used for multiple values for a single variable.
+ Arrays in Javascript are dynamic, it doesn’t necessarily have to be the same type and can be dimensional.
+
+Syntax
+var array_name = [item1, item2, ...];  
+
+            <h3>Accessing the Arrays</h3>
+   it can be accessed by putting in the index number of a certain element in the array.     
+ 
+ 
+This statement accesses the value of the first element in laptops:
+var name = laptops[0];
+
+<ul><b>Array Elements Can Be Objects</b>
+            <li>Javascript array elements can be used as objects. Array are special objects in Javascript.</li> 
+            <li>Arrays can also have functions.</li></ul>
+ 
+            <ul><li>myArray[0] = Date.now;</li>
+        <li>myArray[1] = myFunction;</li>
+    <li>myArray[2] = myCars;</li></ul>
+<ul>
+    <li>stack - add/ remove</li>
+<li>shift / unshift -  add or remove at the beginning of the array
+    Similar to pop/push in java</li>
+
+    <li>fruits , sort (sorted values returned )</li>
+            <b>can sort via length</b>
+
+
+            <li>.forEach -  to access the value of the data / index of of an array instead of for top</li>
+
+            <li>.reduce - for accumulation of the existing value of an Array</li>
+
+    <li>.filter - can be used by providing condition</li></ul>
+
+
+        <b>objects are not class based in javascript</b> 
+
+<p>
+var person = new Objects();
+person.name = Juan ;
+person [!age!] = 21;
+person = 
+
+var Stud = new Student  (‘123’,’Pedro’, ‘BSCS’ ,3 ); // property of student or objects will be taken by stud1   
+
+*If you declare variables of braces, this functions are already JSON functions
+    JSON format → complex format</p>
+
+<ul>Event Propagation Order( DOM-compliant Browsers)
+    <li>Capturing phase</li>
+        <li>At target</li>
+    <li>Bubbling phase</li></ul>
+
+    <b>Event Handler Registration</b>
+     &lt;button id = “button” onclick = ‘handler( ) &gt;Click me &lt;/button&gt;   
+                           
+    Button onclick = handler; // actual function
+
+<ul>        
+<li>Method  #1 (online HTML Event attribute)
+        → non-standard</li>
+
+<li>Method  #2 (pre-DOM 1.2)
+                        → non-Standard , universal </li>
+
+<li>Method #3(DOM 1.2 Event Registration) → standard , well-supported 
+-can register more than one event
+- can register handler on the bubbling and capture phase
+        -remove event handler → remove Event.Listener( ); dispatchEvent( ) - trigger event programmatically</li>
+
+<li>Method #4( MIcrosoft - Specific, non-standard)
+                 var button = document.getElementById(“button”);
+    button attachEvent
+
+
+//detachEvent( )  - remove event handler 
+//FileEvent ( ) - trigger event programmatically
+-can register event handler on bubble phase only.</li>
+</ul>
+
+        <ul>
+<li>Method # 1 registration
+               function handler (obj) {
+
+        }</li>
+
+<li>Method # 2 and Method # 3 Registration
+               function handler ( ) {
+		var element  = this ; // element that is handling the object
+
+
+                 // event object is passed implicitly as the first argument  of the event handler</li></ul>
+
+<ul>Event object Properties and Methods
+    <li>bubbles</li>
+    <li>eventPhase</li>
+    <li>target (or SrcElement(non-Standard))</li>
+    <li>currentTarget</li>
+    <li>PreventDefault</li>
+    <li>stopPropagation( ) - no propagation take place at particularEvent.</li>
+    <li>stop Immediate Propagation ( ) -other next handler won’t propagate</li></ul>
+
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Web Technology</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Images/LogoGrayTrans.png" />
+    </head>
+    <body>
+    <header class="hd-browser-wrapper">
+        <div class="navigation" id="id3"><!-- -->
+                <nav class="navbar" id="id00001"><!-- -->
+                   <ul>
+                        <li class="menu1">
+                            <a href="Index.html"><img class="WBLettering" src="Images/WebTech.png"></a></li>
+                        <li class="menu2">
+                            <a href="Glossary.html">Glossary of Terms</a></li>
+                        <li class="menu3">
+                            <a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="browser-wrap">
+            <h1>Cascading Stylesheets</h1>
+            <h3>What is CSS?</h3>
+<p>- CSS is an acronym for Cascading Style Sheets. It is a language that describes how markup languages are displayed on screen, paper,  or in other media and also the layout of presentation. It is also been used  to design user interfaces of applications. With the help of CSS, presentations may adapt to the different types of devices used. CSS files are separated from HTML files but can be used with XML –based markup language.</p>
+
+            <h3>HISTORY</h3>
+<p>Hakon Wium Lie, the father of CSS, first proposed CSS on October 10, 1994. He was working at the time at CERN with Tim Berners-Lee.  CSS was then proposed as  web styling language for solving problems of HTML 4. Bert Bos who also proposed Argo,  a browser with a style sheet ,at the time became a co-author of CSS1 and was then regarded as co-creator of CSS.</p>
+<p>The first proposal of Lie for the CSS was presented in Chicago, Illinois at the Mosaic and the Web conference which was later called as WWW2. The W3C being organized at the time, took interest in the development of the CSS. As a result, CSS works were added by    W3C to the deliverables of HTML Editorial Review Board(ERB).  Lie and Bos are the ones handling this aspect of  the project, with the help of Thomas Readon from Microsoft.  Alternative language for style sheet was presented in August 1996 by the Netscape Communication Corporation which is the JavaScript Style Sheet(JSSS) but its specification was not finished. CSS has become official by the end of 1996 and in December, CSS level 1 Recommendation was published.</p>
+ 
+            <h3>VERSION HISTORY</h3>
+            <h4>CSS Level  1:</h4>
+<ul>The CSS Level 1 W3C Recommendation was released in  December 1996. This release supports:
+
+    <li>Font properties</li>
+    <li>Text attributes</li>
+    <li>Images</li>
+    <li>Text and background colors</li>
+    <li>Spacing(words, letters, lines, margins, borders, padding and positioning, etc.)</li>
+    <li>Alignment of text</li>
+    <li>Tables</li>
+            </ul>
+A group was formed by the W3C, Formatting Properties Working Group, which focuses only in CSS.
+
+            <h4>CSS Level 2</h4>
+                <ul><p>CSS 2 was released in May 1998. This version’s new feature includes:</p>
+ 
+                <li>Z-index</li>
+                <li>Media types</li>
+            <li>Bidirectional text</li>
+           <li>Absolute</li>
+          <li>Relative and fixed positioning</li>
+         <li>Aural style sheet support</li>
+            </ul>
+After the release of CSS 2, a new browser was released which supports CSS,  the Opera.
+
+                    <h4>CSS 2.1</h4>
+                    <p>- was released in June of 2011 that can fix errors and has  better capabilities aligned with the functions of the browser. But before that, to be able to comply with it, it went back and forth between Working Draft status and Candidate Recommendation status for many years. It was at first a Candidate Recommendation on February 25,2004 but on June 13, 2005, it was reverted to a Working Draft for further review. On July 19, 2007, it was returned to Candidate Recommendation and in 2009, it was updated two times.  On December 7, 2010, it returned to Last Call Working Draft for the changes and clarifications made. Then it went to Proposed Recommendation on April 12, 2011 and then finally published as a Recommendation on June 7, 2011.</p>
+
+                    <h4>CSS Level 3:</h4>
+                    <p>A level of CSS which is separated into modules which extends capabilities of CSS 2 or adds new feature.  This version has already started at the time the CSS 2 original recommendation was published.  Four modules were released as formal recommendations between June 2011 and June 2012. These four modules are: color, selectors level 3, namespaces and media queries.</p>
+ 
+
+            <h2>Style Sheets</h2>
+            	
+<p> style sheet is a form of separation of visual layout or presentation of a webpage to its content which is defined by using a style sheet language like CSS. Style sheet contains rules created by a web designer that can be applied to different HTML elements. This method helps Web page designers to expand their ability to improve the interface or appearance of their web pages.</p>
+
+            <h3>Benefits:</h3>
+<ul><li>Flexibility/Maintainability – defining a style sheet separate from html content makes it easy to reuse and be applied to other html files.</li>
+ <li>Alternate Styles – readers may have different options to view a webpage by using or defining different style sheets.</li>
+    <li>Cascading – some style sheet languages like CSS is capable of allowing style information from different sources to be blended together.</li></ul>
+
+            <h3>Why Do They Cascade?</h3>
+            	
+            <p>Basically, style sheets are cascading. It allows you to override previous defined styles by adding or defining another style to your webpage. When you have more than one style specified in your HTML file the style with the highest priority will be applied to your webpage.</p>
+
+            <h3>Style Priority:</h3>
+<li>1.  Inline style – a style specified inside a specific HTML element and has the highest priority.</li>
+        <li>2. External and internal style sheets – styles specified either externally or internally.</li>
+    <li>3. Browser default – a style which browser applies by default for every page that it loads.</li>
+
+            <h2>3 Types of Style Sheets:</h2>
+<ul><li>1. Author Styles - the style sheet that is defined by the author.
+       	              	   - there are three kinds of author styles:
+
+                <ul><li>In-line: a style defined inside a HTML tag itself (e.g. &lt;div&gt; style=”background-color:whitesmoke;”>&lt;/div&gt;
+                    Internal/Embedded: a type of author style that is defined in &lt;style&gt; tag inside the &lt;head&gt; tag of an html file.</li>
+
+                    <li>External: a style that is defined in a separate CSS file which are applied by using link tag inside the &lt;head&gt; tag in an html web page (e.g. &lt;style&gt; rel=”stylesheet” type=”text/css” href=”style.css”&gt;).</li></ul></li>
+
+    <li>2. User Styles – a user may specify a style sheet or a user-agent may provide a user style sheets like how some browsers provide alternative styles through plug-ins/extensions.</li>
+
+    <li>3. User Agent Styles –a style that a browser applies to a webpage by default also known as Default Style or Browser Style.</li></ul>
+
+        </div>
+    </body>
+</html>

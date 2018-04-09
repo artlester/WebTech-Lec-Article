@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Web Technology</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Images/LogoGrayTrans.png" />
+    </head>
+    <body>
+    <header class="hd-browser-wrapper">
+        <div class="navigation" id="id3"><!-- -->
+                <nav class="navbar" id="id00001"><!-- -->
+                    <ul>
+                        <li class="menu1">
+                            <a href="Index.html"><img class="WBLettering" src="Images/WebTech.png"></a></li>
+                        <li class="menu2">
+                            <a href="Glossary.html">Glossary of Terms</a></li>
+                        <li class="menu3">
+                            <a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="http-wrap">
+            <br>
+            <h1>HTTP</h1>
+
+            <p><b>Hypertext Transfer Protocol (HTTP)</b> 
+     HTTP is a communications protocol that runs on the TCP/IP suite of protocols. It is the set of rules for transferring and accessing different hypermedia files like text, graphic images, sound, video and other multimedia files on the World Wide Web.</p>
+            <ul><h2>HTTP Versions</h2>
+                <li><b>HTTP/0.9</b>  - The one-line protocol
+-This is the initial version of HTTP that is very simple because the requests consist of only a single line and starts with the only supported method GET followed by the path to the resource (sample code: GET  /samplepage.html)and the response type is hypertext only.
+    -In this version of HTTP there were no HTTP headers, no status/error codes, no URLs and no versioning.</li>
+
+                <li><b>HTTP/1.0</b> – Building extensibility
+    -In this version, the notion of HTTP headers has been introduced. It provided header fields including rich metadata for both the request s and responses making the protocol extremely flexible. The GET, HEAD and POST methods were supported in this version of HTTP.</li>
+
+                <li><b>HTTP/1.1</b> - The standardized protocol 
+-This is the version currently in common use. In this version, the critical performance optimizations and feature enhancements has been introduced. The following are the different features that has been added:
+-Persistent and pipelined connections
+-Chunked transfers
+-Compression/Decompression
+-Content negotiations
+-Virtual hosting
+    -Faster response and great bandwidth savings by adding cache support</li>
+
+                <li><b>HTTP/2</b> – A protocol for greater performance
+    -This version of HTTP was originally named HTTP2.0. The SPDY protocol serves as the foundation of this version, originally developed by Google. This version enables a more efficient use of network resources by introducing header field compression and by allowing multiple concurrent exchanges on the same - connection.</li>
+                <li><b>HTTP Request</b> 
+    Whenever you are accessing a website in a browser, all our actions produce a HTTP request that is sent to the web server and the server will then send back a response by determining your computer’s IP address, and a port number to which to send the response. Each HTTP request are subdivided into 3 sections namely request line, headers and body.</li></ul>
+            
+            <ul><h2>Standard Methods</h2>
+<li><b>GET</b> – This method retrieves whatever data or information from a specified resource. The response to the GET request is cacheable. </li>
+<li><b>HEAD</b> – The HEAD method is identical to the GET request, but the server must not return a message body in the response.</li>
+<li><b>POST</b> – The POST method is typically used in submitting HTML form data to the specified resource. If there is post, there is a message body.</li>
+<li><b>PUT</b> – The PUT method is used to replace all current representations of the specified resource with the request payload.</li>
+<li><b>DELETE</b> – The DELETE method requests to delete a specified resource identified by the Request-URI.</li>
+<li><b>OPTIONS</b> – The OPTIONS method is used to describe the communication options available on the request/response chain.</li>
+<li><b>TRACE</b> – The TRACE method allows the web server to reecho the request message.</li>
+<li><b>CONNECT</b> – The CONNECT method establishes  a tunnel to the web server.</li></ul>
+        
+        
+<ul><h2>Request Methods</h2>
+<li><b>SAFE METHOD</b><br>- are read only methods and does make no changes on the resource.
+    <br>- methods under this are GET, HEAD, TRACE,  and OPTIONS</li>
+    <li><b>IDEMPOTENT METHOD</b><br>- methods producing the expected result from the server
+<br>- methods are GET, HEAD, OPTIONS, TRACE, PUT,  and DELETE</li>
+    <li><b>CACHEABLE METHOD</b> <br>– indicates that the response to a method is allowed to be stored for future reuse. This method ensures that the data being sent to the client is always new.
+<br>- methods under this are GET, HEAD, and POST</li></ul>
+            
+            
+            <ul><h2>HTTP RESPONSE MESSAGE</h2>
+                A server sends a response after it received and interpreted a request message.
+                <li><b> Status Line </b>
+                    <br>- consists of the protocol version followed by a numeric status code and its associated textual phrase.</li>
+                <li><b>Status code</b>
+                    <br>- A 3-digit integer where in the first digit will determine the class of response. The status code consists of 5 classifications:</li>
+            <ul>
+                <li><b>Informational  : 1xx</b>
+                    <br>- The request was received and the process is continuing.
+                    <br>
+                    Examples:
+                        <pre>
+            100  =  Continue
+            101  =  Switching Protocol
+                        </pre>
+                </li>
+                
+                <li><b>Success : 2xx</b>
+                    <br>- Response indicating the action was successfully received, understood , and accepted.
+                    <br>
+                    Examples:
+                        <pre>
+            200	 =  OK
+            201	 =  Created
+            202	 =  Accepted
+            204	 =  No Content
+            205	 =  Partial Content
+                        </pre>
+                </li>
+                
+                <li><b>Redirection : 3xx</b>
+                    <br>- A response indicating an action must further be done to complete a request.
+                    <br>
+                    Examples:
+                        <pre>
+            300	 =  Multiple Choices
+            302	 =  Found
+            304	 =  Not Modified
+            305	 =  Use Proxy
+            307	 =  Temporary Redirect
+                        </pre>
+                </li>
+                
+                 <li><b>Client Error : 4xx</b>
+                    <br>-Response that the request contains incorrect syntax or cannot be done.
+                    <br>
+                    Examples:
+                        <pre>
+            400	 =  Bad Request
+            401  = 	Unauthorized
+            403	 =  Forbidden
+            404	 =  Not Found
+            408	 =  Request Timeout
+                        </pre>
+                </li>
+                
+                <li><b>Server Error : 5xx</b>
+                    <br>-The server failed to response on a valid request.
+                    <br>
+                    Examples:
+                        <pre>
+            500	 =  Internal Server Error
+            502	 =  Bad Gateway
+            503	 =  Service Unavailable
+            504	 =  Gateway Time-out
+                        </pre>
+                </li>
+                
+            </ul>
+    
+            
+            
+            </ul>
+            <br></div>  
+    </body>
+</html>
